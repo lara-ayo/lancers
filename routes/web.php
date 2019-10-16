@@ -98,6 +98,13 @@ Route::get('/set_estimate', function () {
     return view('set_estimate');
 });
 
+Route::get('/invoice_edit', function () {
+    return view('invoice_edit');
+});
+
+Route::get('/invoice_setting', function () {
+    return view('invoice_setting');
+});
 
 
     Route::get('/transactions', 'TransactionsController@index');
@@ -106,7 +113,7 @@ Route::get('/set_estimate', function () {
 Route::get('/invoice/pdf', function() {
     //return view('invoice_view_pdf');
 
-    $pdf = PDF::loadView('invoice_view_pdf');  
+    $pdf = PDF::loadView('invoice_view_pdf');
     return $pdf->download('lancers_invoice.pdf');
 });
 

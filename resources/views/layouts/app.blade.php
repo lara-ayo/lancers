@@ -18,7 +18,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css">
   <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400&display=swap" rel="stylesheet">
- 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/edit-invoice.css">
 
     <!-- Styles -->
     {{--  <link href="{{ asset('css/app.css') }}" rel="stylesheet">  --}}
@@ -27,23 +28,23 @@
    {{--  //inline styles  --}}
 
     @yield('styles')
-    
+
 </head>
 <body>
 
     {{--  //top navigation bar  --}}
     @yield('header')
-    
+
     {{--  //sidebar  --}}
     @auth
-       @yield('sidebar') 
+       @yield('sidebar')
     @endauth
-        
+
     {{-- //the content --}}
 
-    
+
     @yield('content')
-    
+
     @yield('footer')
 
 
@@ -80,8 +81,8 @@
 
             </script>
    {{--  // inline scrpt  --}}
-   
+
    @yield('script')
-       
+
 </body>
 </html>

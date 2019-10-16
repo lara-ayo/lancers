@@ -1,5 +1,5 @@
 
-@extends('layouts.master')  
+@extends('layouts.master')
 
 @section('styles')
 <style>
@@ -231,7 +231,7 @@ svg {
     color: #fff;
     background-color: #0ABAB5;
 }
-@media (max-width: 992px) {    
+@media (max-width: 992px) {
 #sidebar-wrapper {
   height: 80vw;
 }
@@ -441,7 +441,7 @@ tbody, .bold {
 @media (max-width: 450px) {
     #sidebar-wrapper {
         display: none;
-    }    
+    }
       td,
     th {
         width: 38vw;
@@ -455,7 +455,7 @@ tbody, .bold {
 </style>
 @endsection
 
-@section('sidebar')   
+@section('sidebar')
 
 <div class="d-flex" id="wrapper">
 
@@ -473,11 +473,11 @@ tbody, .bold {
         </svg>
         </a>
        <div class="dropdown-menu animated fadeInLeft" role="menu">
-          <a class="dropdown-item" href="#">Status</a>  
-          <a class="dropdown-item" href="#">Overview</a>   
-          <a class="dropdown-item" href="#">Collabrators</a>  
-          <a class="dropdown-item" href="#">Task</a>  
-          <a class="dropdown-item" href="#">Documents</a>  
+          <a class="dropdown-item" href="#">Status</a>
+          <a class="dropdown-item" href="#">Overview</a>
+          <a class="dropdown-item" href="#">Collabrators</a>
+          <a class="dropdown-item" href="#">Task</a>
+          <a class="dropdown-item" href="#">Documents</a>
         </div>
       </div>
 
@@ -495,12 +495,12 @@ tbody, .bold {
         <rect width="20.5" height="20.5" fill="white"/>
         </clipPath>
         </defs>
-        </svg> invoice </a> 
+        </svg> invoice </a>
 
         <a href="#" class="list-group-item list-group-item-action bg-dark"><img src="https://res.cloudinary.com/samtech/image/upload/v1570727368/policy.svg" alt=""> Contract</a>
         <a href="#" class="list-group-item list-group-item-action bg-dark"><img src="https://res.cloudinary.com/samtech/image/upload/v1570727365/approval.svg" alt=""> Proposals</a>
       </div>
-    
+
     <!-- /#sidebar-wrapper -->
 </div>
 @endsection
@@ -510,11 +510,11 @@ tbody, .bold {
     <div id="page-content-wrapper">
 
         <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
-  
+
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-  
+
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-left mt-2 mt-lg-0">
               <li class="nav-item ml-3 active">
@@ -534,17 +534,17 @@ tbody, .bold {
               </li>
             </ul>
           </div>
-        </nav> 
+        </nav>
 @endsection
 
 @section('content')
 
-<section class="invoice-body ml-4"> 
+<section class="invoice-body ml-4">
     <div class="container ">
         <div class="row mt-5 ml-4">
           <button type="button" class="btn btn-outline-dark ">Print</button>
           <a href="{{URL::to('/invoice/pdf')}}" class="btn btn-outline-dark ml-4">Download as PDF   </a>
-          <button type="button" class="btn btn-outline-dark ml-auto">Edit</button>
+          <button type="button" class="btn btn-outline-dark ml-auto" value="<a href="{{URL::to('/invoice_edit')}}></a>" >Edit</button>
           <button type="button" class="btn btn-primary ml-4">Other actions</button>
         </div>
     </div>
@@ -580,7 +580,7 @@ tbody, .bold {
                 <tr>
                     <td><span contenteditable="">John Doe</span> </td>
                     <td><span contenteditable=""> 18th September 2019</span></td>
-                    <td> N/A</td>      
+                    <td> N/A</td>
                 </tr>
                 <tr>
                   <td><span contenteditable="">Johndoe@gmail.com</span></td>
@@ -599,7 +599,7 @@ tbody, .bold {
                 </tr>
               </tbody>
             </table>
-            
+
         <section class="invoice-description mt-4    ">
 
                 <table class="table table-responsive container " style="width: 100%">
@@ -658,7 +658,7 @@ tbody, .bold {
                     </tbody>
                     <tfoot>
                         <tr>
-                          
+
                        <td class="removeBorder" colspan="4"></td>
                           <td class="removeBorder"></td>
                           <td class="removeBorder table-date" colspan="2" style="text-align: right;">Discount</td>
