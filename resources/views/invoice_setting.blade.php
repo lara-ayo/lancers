@@ -2,7 +2,7 @@
 
 @section('title', 'invoice setting')
 
-@section('style')
+@section('content')
 <style>
         body {
             font-family: 'Ubuntu', sans-serif;
@@ -325,7 +325,7 @@
             }
         }
     </style>
-@endsection
+
 
 
 @section('content')
