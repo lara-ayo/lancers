@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('title', 'invoice edit')
+
 @section('content')
 	<div class="pageBackground">
         <header class="container-a header_container small">
