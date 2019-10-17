@@ -1,4 +1,5 @@
 @extends('layouts.master')
+@section('title', 'guest estimate')
 
 @section('styles')
 <style>
@@ -12,15 +13,15 @@
         }
         ul {
             display: inline-block;
-            float: right;   
+            float: right;
             width: fit-content;
             padding-inline-start: 10px;
             margin-top: 24px;
-            
+
         }
 
         li {
-            
+
             display: inline;
         }
 
@@ -40,11 +41,11 @@
             height: 80px;
             padding: 5px;
             border-bottom: 4px solid;
-            border-bottom-color: rgba(196, 196, 196, 0.4);   
+            border-bottom-color: rgba(196, 196, 196, 0.4);
         }
         .c-estimate {
             width: fit-content;
-            float: left; 
+            float: left;
             /* margin-left: auto; */
             /* margin-right: auto; */
             align-content: center;
@@ -102,7 +103,7 @@
             margin-top: 12px;
             clear: both;
         }
-        
+
         .a-next a {
             color: white;
         }
@@ -157,7 +158,7 @@
         }
 
         .est {
-            color: white; 
+            color: white;
             background:  #0ABAB5;
             font-weight: bold;
             font-size: 28px;
@@ -264,34 +265,34 @@
                             doing so the estimate gets populated with some of the data
                         </p>
                    </div>
-                  
+
                    <div class="contents dropdown">
                            <select class="dropbtn" name="" onmouseout="verifyPath()" id="projectSelect">
                                <option>Select Project</option>
                                <option>Glacier Fintech App</option>
                                <option> AB Technology Solutions Branding</option>
-                           </select>  
+                           </select>
                            <!-- <i class="fa fa-caret-down"></i> -->
-                           
+
                    </div>
                </div>
            </div>
-   
-   
+
+
            <div class="cree">
                    <div class="lists glacier">
                        <div class="box">
                             <h3 class="first-head">A new project</h3>
                             <p class="contents">Create a new estimate and set up a new project <br />
-                                based on the information 
+                                based on the information
                             </p>
                        </div>
-                      
+
                        <div class="contents project">
                            <input class="l-proj" type="text" onmouseout="verifyPath()" placeholder= "Project Name" name="" id="createProject">
                            <br>
                            <span class="req">Required</span></div>
-       
+
                    </div>
                </div>
                <button class="a-next disabled"><a href="#">NEXT</a></button>
@@ -310,7 +311,7 @@
        // estimate_page.classList.add('hidden');
        document.querySelector('#Create_estimate').classList.remove('hidden');
        document.querySelector('#estimate').classList.add('hidden');
-       
+
     }
 
     est_content.addEventListener('click', hide );
@@ -323,9 +324,9 @@
     });
 
         //createProject = '';
-    
-    
-    
+
+
+
 
     function verifyPath(){
         let createProject = document.getElementById('createProject').value;
@@ -336,7 +337,7 @@
         if ( createProject !== "" || ele !== 0 ){
             document.querySelector('.a-next').style.background = '#0ABAB5';
             document.querySelector('.next').style.background = '#0ABAB5';
-            
+
             document.querySelector('.a-next').classList.remove('disabled');
             document.querySelector('.next').classList.remove('disabled');
         } else {
@@ -346,8 +347,8 @@
             document.querySelector('.a-next').style.background = 'rgba(207, 204, 204, 0.4)';
             document.querySelector('.a-next').classList.add('disabled');
         }
-        
+
     }
     </script>
-    
+
 @endsection

@@ -1,5 +1,5 @@
-@extends('layouts.master')  
-
+@extends('layouts.master')
+@section('title', 'invoice pdf')
 @section('styles')
 <style>
 
@@ -230,7 +230,7 @@ svg {
     color: #fff;
     background-color: #0ABAB5;
 }
-@media (max-width: 992px) {    
+@media (max-width: 992px) {
 #sidebar-wrapper {
   height: 80vw;
 }
@@ -440,7 +440,7 @@ tbody, .bold {
 @media (max-width: 450px) {
     #sidebar-wrapper {
         display: none;
-    }    
+    }
       td,
     th {
         width: 38vw;
@@ -485,7 +485,7 @@ tbody, .bold {
                 <tr>
                     <td><span contenteditable="">John Doe</span> </td>
                     <td><span contenteditable=""> 18th September 2019</span></td>
-                    <td> N/A</td>      
+                    <td> N/A</td>
                 </tr>
                 <tr>
                   <td><span contenteditable="">Johndoe@gmail.com</span></td>
@@ -504,7 +504,7 @@ tbody, .bold {
                 </tr>
               </tbody>
             </table>
-            
+
             <section class="invoice-description mt-4    ">
 
                     <table class="table table-responsive container " style="width: 100%">
@@ -563,7 +563,7 @@ tbody, .bold {
                         </tbody>
                         <tfoot>
                             <tr>
-                            
+
                         <td class="removeBorder" colspan="4"></td>
                             <td class="removeBorder"></td>
                             <td class="removeBorder table-date" colspan="2" style="text-align: right;">Discount</td>

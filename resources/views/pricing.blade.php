@@ -1,5 +1,5 @@
 @extends('layouts.app')
-
+@section('title', 'pricing')
 @section('styles')
  <style>
  	:root{
@@ -156,7 +156,7 @@
 
 			/* for navbar toggler design */
 			.icon-bar {
-				width: 22px; 
+				width: 22px;
 				height: 2px;
 				background-color: #B6B6B6;
 				display: block;
@@ -176,17 +176,17 @@
 			.navbar-toggler .top-bar {
 			  transform: rotate(45deg);
 			  transform-origin: 10% 10%;
-			} 
+			}
 			.navbar-toggler .middle-bar {
 			  opacity: 0;
-			} 
+			}
 			.navbar-toggler .bottom-bar {
 			  transform: rotate(-45deg);
 			  transform-origin: 10% 90%;
 			}
 			.navbar-toggler.collapsed .top-bar {
 			  transform: rotate(0);
-			} 
+			}
 			.navbar-toggler.collapsed .middle-bar {
 			  opacity: 1;
 			}
@@ -194,7 +194,7 @@
 			  transform: rotate(0);
 			}
 
-			
+
 
 	.pricing{
 			width: 100%;
@@ -206,7 +206,7 @@
 			text-align: center
 	}
 
-	.pricing .title-header h1{ 
+	.pricing .title-header h1{
 			font-size: 65px;
 			padding-left: 160px;
 			padding-right: 160px;
@@ -224,7 +224,7 @@
 	.pricenumber{
 			text-align: center;
 			font-size: 48px;
-			
+
 	}
 
 	.price-button{
@@ -286,7 +286,7 @@
 			color: white;
 			font-weight: normal;
 			font-style: normal;
-			
+
 	}
 
 	#enter-line {
@@ -337,7 +337,7 @@
 					padding: 20px;
 			}
 
-			
+
 
 			.pricecol{
 					margin: 20px auto
@@ -386,7 +386,7 @@
 							</li>
 							<li class="nav-item">
 								<a class="nav-link" href="{{ route('register') }}">Sign up</a>
-							</li>                             
+							</li>
 						</ul>
 					</div>
 				</div>
@@ -395,7 +395,7 @@
 @stop
 
 @section('sidebar')
-    
+
 @endsection
 
 @section('content')
@@ -411,7 +411,7 @@
                         <div class="price">
                                 <h5 class="pricenumber">0.00<p>/mo</p></h5>
                             </div>
-                            
+
                         <ul class="pricelist pt-3">
                             <li>
                                 <span><svg width="16" height="16" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -443,7 +443,7 @@
                             <div class="price">
                                     <h5 class="pricenumber">24.99<p>/mo</p></h5>
                                 </div>
-                                    
+
                             <ul class="pricelist pt-3">
                                     <p class="m-0" style="font-size: 12px">All Stater features and</p>
                                 <li>
@@ -464,7 +464,7 @@
                                     <path d="M21 3.00574L11 13.0157L8 10.0157" stroke="#091429" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                     </svg></span>  One of each generatable document</li>
                             </ul>
-    
+
                             <div class="price-button p-3">
                                     <a href="#" class="btn btn-primary btn-block">Sign up for free</a>
                             </div>
@@ -477,8 +477,8 @@
                                 <div class="price">
                                     <h5 class="pricenumber">79.99<p>/mo</p></h5>
                                 </div>
-                                
-        
+
+
                                 <ul class="pricelist pt-3">
                                 <p class="m-0" style="font-size: 12px">All Stater and Pro features and</p>
 
@@ -500,13 +500,13 @@
                                         <path d="M21 3.00574L11 13.0157L8 10.0157" stroke="#091429" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                         </svg></span>  One of each generatable document</li>
                                 </ul>
-        
+
                                 <div class="price-button p-3">
                                         <a href="#" class="btn btn-primary btn-block">Sign up for free</a>
                                 </div>
                             </div>
                             </div>
-            
+
                 </div>
             </div>
         </section>
@@ -550,7 +550,7 @@
 							52b, Charity Lane, off Magboso Highway, Ikate, London, Nigeria
 						</p>
 						<h5 class="">
-							<a href="#" class="text-dark mr-2"><i class="fab fa-facebook-square"></i></a> 
+							<a href="#" class="text-dark mr-2"><i class="fab fa-facebook-square"></i></a>
 							<a href="#" class="text-dark"><i class="fab fa-twitter-square"></i></a>
 						</h3>
 					</div>

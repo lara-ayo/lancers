@@ -1,8 +1,8 @@
 @extends('layouts.master')
-
+@section('title', 'set estimate')
 @section('styles')
 <style>
-    
+
     body .container-fluid {
         background-color: #ffffff;
         border: 1px  gray;
@@ -43,7 +43,7 @@
       border-bottom: 0.15rem solid #e4e4e4;
       height: 4rem;
       width: 66%;
-      
+
     }
 
     .next-button {
@@ -60,7 +60,7 @@
       position: absolute;
       left: 30%;
     }
-    
+
     .next-button p {
       margin-top: 15px;
       font-size: 15px;
@@ -96,9 +96,9 @@
       color: #e4e4e4;
       margin-top: 20px;
       margin-left: 5px;
-      
+
     }
-    
+
     .close-button span i {
       font-size: 1rem;
       color: #e4e4e4;
@@ -178,7 +178,7 @@
       border: 1px solid #91919187;
     }
 /* @Ezeko*/
-    
+
     .date>input{
       border: none;
       text-decoration: underline;
@@ -339,7 +339,7 @@
 @endsection
 
 @section('header')
-    
+
 <div class="container-fluid">
     <div class="row">
       <div class="close-button text-center">
@@ -372,7 +372,7 @@
 
 @section('content')
 <div class="container">
-    
+
     <div id="glac">
       Glacier Fintech App<hr />
     </div>
@@ -420,7 +420,7 @@
         <input type="text" name="est3" id="est3" placeholder="NGN 0.00" />
       </div>
       <!-- Slack Display Name: Akosworldwide, GitHub Username: Akosworldwide -->
-      
+
       <br>
       <h3>Expertise</h3>
 
@@ -430,22 +430,22 @@
       </div>
 
         <br>
-        
+
       <div>
         <p id="rate">Out of 5 how would you rate your<br>experience level in executing this<br>project?<p>
         <input type="text" name="exp2" id="exp2">  /5
       </div>
       <hr />
-      <!-- Name:          Mary Jonah  
+      <!-- Name:          Mary Jonah
     Slack UserName: @Mary_Jonah -->
       <div id="currency">
           Currency:<select>
               <option>NGN</option>
               <option>AED</option>
-              <option>AFN</option>	
-              <option>ALL</option>	
-              <option>AMD</option>	
-              <option>ANG</option>	
+              <option>AFN</option>
+              <option>ALL</option>
+              <option>AMD</option>
+              <option>ANG</option>
               <option>AOA</option>
               <option>ARS</option>
               <option>AUD</option>
@@ -474,9 +474,9 @@
               <option>CNY</option>
               <option>COP</option>
               <option>CRC</option>
-              <option>CUC</option>                              	 	
+              <option>CUC</option>
           </select>
-                     
+
       </div>
     </div>
     <div class="footer-next">

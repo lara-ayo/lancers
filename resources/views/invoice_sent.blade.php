@@ -1,5 +1,5 @@
 @extends('layouts.master')
-
+@section('title', 'invoice sent')
 @section('styles')
 <style>
     body {
@@ -85,7 +85,7 @@
 
     </div>
 
-    <div class="side">  
+    <div class="side">
         <button class="invBtn">VIEW INVOICES</button>
     </div>
 @endsection

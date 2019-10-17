@@ -1,5 +1,5 @@
 @extends('layouts.app')
-
+@section('title', 'welcome')
 @section('styles')
       <style type="text/css">
 	    	/*Main page style by message*/
@@ -163,7 +163,7 @@
 
 			/* for navbar toggler design */
 			.icon-bar {
-				width: 22px; 
+				width: 22px;
 				height: 2px;
 				background-color: #B6B6B6;
 				display: block;
@@ -183,17 +183,17 @@
 			.navbar-toggler .top-bar {
 			  transform: rotate(45deg);
 			  transform-origin: 10% 10%;
-			} 
+			}
 			.navbar-toggler .middle-bar {
 			  opacity: 0;
-			} 
+			}
 			.navbar-toggler .bottom-bar {
 			  transform: rotate(-45deg);
 			  transform-origin: 10% 90%;
 			}
 			.navbar-toggler.collapsed .top-bar {
 			  transform: rotate(0);
-			} 
+			}
 			.navbar-toggler.collapsed .middle-bar {
 			  opacity: 1;
 			}
@@ -243,7 +243,7 @@
 							</li>
 							<li class="nav-item">
 								<a class="nav-link" href="{{ route('register') }}">Sign up</a>
-							</li>                             
+							</li>
 						</ul>
 					</div>
 				</div>
@@ -252,7 +252,7 @@
 @stop
 
 @section('sidebar')
-    
+
 @endsection
 
 @section('content')
@@ -336,7 +336,7 @@
 		  			</div>
 		  		</div>
 		  	</section>
-	</main>   
+	</main>
 @stop
 
 
@@ -368,7 +368,7 @@
 							52b, Charity Lane, off Magboso Highway, Ikate, London, Nigeria
 						</p>
 						<h5 class="">
-							<a href="#" class="text-dark mr-2"><i class="fab fa-facebook-square"></i></a> 
+							<a href="#" class="text-dark mr-2"><i class="fab fa-facebook-square"></i></a>
 							<a href="#" class="text-dark"><i class="fab fa-twitter-square"></i></a>
 						</h3>
 					</div>

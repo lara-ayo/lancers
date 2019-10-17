@@ -1,15 +1,15 @@
 @extends('layouts.app')
-
+@section('title', 'subscription')
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
             <div class="card-header"><a href='/dashboard' >Dashboard</a></div>
-              
+
             <div class="card-header"><a href='/users/subscriptions' >Subscriptions</a></div>
                 <div class="card-header"><a href='/users/view/subscriptions' >Current Plan</a></div>
-                
+
                 <div class="card-header"><h1>Select Subscription</h1></div>
 
                 <div class="card-body">
@@ -19,10 +19,10 @@
                         </div>
                     @endif
 
-                 
+
                 </div>
 
-                
+
                 @if(session('editStatus') && session('plan'))
                      <div class="alert alert-success" role="alert">
                           {{ session('editStatus') }} {{ session('plan') }} plan
@@ -34,21 +34,21 @@
                         </div>
                 @endif
                 <div class="card-body">
-                  
+
                    @if($plans != null)
                      <div>
                           @foreach ($plans as $mainPlans)
                                    @foreach ($mainPlans as $key => $value)
                                               @if($key == 'name')
-                                                @php 
+                                                @php
                                                 $url = url("/payment/$value");
 
                                                 @endphp
-                                               
+
                                             @endif
                                           @if(($key != 'id') && ($key != 'created_at') && ($key != 'updated_at'))
                                                @if(($key != 'features') && ($key != 'price'))
-                                                <h4> Plan {{  ucfirst($key) }} :</h4> {{ str_replace("_"," ",ucfirst($value))}} 
+                                                <h4> Plan {{  ucfirst($key) }} :</h4> {{ str_replace("_"," ",ucfirst($value))}}
                                                @endif
                                                     @if($key == 'features')
                                                         @php
@@ -62,26 +62,26 @@
                                                                 {{ str_replace("_"," ",ucfirst($Featureskey)) }} : {{ ucfirst($Featuresvalue)}}
                                                                 </br>
                                                             @endforeach
-                                                            
-                                                    @endif 
-                                            
+
+                                                    @endif
+
                                             </br>
                                                @if($key == 'price')
-                                                <h4> Plan {{  ucfirst($key) }} :</h4> ${{ str_replace("_"," ",ucfirst($value))}} 
-                                              
+                                                <h4> Plan {{  ucfirst($key) }} :</h4> ${{ str_replace("_"," ",ucfirst($value))}}
+
                                                 <a href={{$url}}>Select Plan<a/>
-                                               
+
                                                 @endif
                                            @endif
 
-                                              
+
 
                                     @endforeach
                                     </br>
                                     </br>
-                                    
+
                           @endforeach
-                         
+
                         </div>
                 @endif
                 </div>

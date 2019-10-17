@@ -1,6 +1,6 @@
 
 @extends('layouts.master')
-
+@section('title', 'invoice')
 @section('styles')
 <style>
 

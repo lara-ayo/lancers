@@ -1,16 +1,16 @@
 @extends('layouts.app')
-
+@section('title', 'paystack payment')
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">Payment for {{$data['name']}}</div>
-                <div class="card-body">                   
+                <div class="card-body">
                     @if($data['amount'] == 0)
                         {{ "No payment needed"}}
                     @else
-                        <div class="row form-group">                            
+                        <div class="row form-group">
                             @if($data['type'] == 'sub')
                                 <label for="password" class="col-md-4 col-form-label text-md-right">Enter number of months</label>
                                 <div class="col-md-6">
@@ -34,14 +34,14 @@
             <script src="https://js.paystack.co/v1/inline.js"></script>
             <script>
                 const paymentType = "{{$data['type']}}";
-                window.addEventListener('DOMContentLoaded', function () {              
+                window.addEventListener('DOMContentLoaded', function () {
                     const monthsInput = document.getElementById("months_input");
                     const makePaymentBtn = document.getElementById("makepayment");
                     const payDefault = document.getElementById("pay_default");
                     const dbAmount = Number({{$data['amount']}});
 
-                    if(paymentType == "sub"){    
-                        const balance = new Number({{$data['balance']}})                    
+                    if(paymentType == "sub"){
+                        const balance = new Number({{$data['balance']}})
                         monthsInput.addEventListener("input", function(e){
                             makePaymentBtn.innerText = "Pay $" + ((e.target.value * dbAmount) - balance).toFixed(2);
                         });
@@ -56,7 +56,7 @@
                                 payWithPaystack(amount, months);
                             }
                         });
-                    }else{                        
+                    }else{
                         payDefault.addEventListener('click', function(){
                             payWithPaystack(dbAmount - balance);
                         });
